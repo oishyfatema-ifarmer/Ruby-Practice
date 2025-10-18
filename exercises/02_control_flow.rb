@@ -21,4 +21,8 @@ def adult_names(people)
   raise NotImplementedError, "implement adult_names(people)"
 end
 
+def new_name(person)
+  raise NotImplementedError, "implement new_name(person)"
+end
+
 
