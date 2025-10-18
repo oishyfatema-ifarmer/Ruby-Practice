@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+echo "Running all tests..."
+for file in test/test_*.rb; do
+  echo "\n==> ruby -I test $file"
+  ruby -I test "$file"
+done
+
+echo "\nAll tests ran."
+
+
